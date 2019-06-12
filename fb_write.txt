@@ -1,0 +1,5 @@
+./nanos-lite/tags:80:fb_write	src/device.c	/^void fb_write(const void *buf, off_t offset, size_t len) {$/;"	f
+./nanos-lite/src/device.c:21:void fb_write(const void *buf, off_t offset, size_t len) {
+Binary file ./nanos-lite/src/.device.c.swp matches
+./nanos-lite/src/fs.c:11:extern void fb_write(const void *buf, off_t offset, size_t len);
+./nanos-lite/src/fs.c:99:			fb_write(buf, file_table[fd].open_offset, len);

@@ -1,0 +1,43 @@
+./SPEC.md:35:* `void _draw_rect(const uint32_t *pixels, int x, int y, int w, int h);`绘制`pixels`指定的矩形，其中按行存储了w*h的矩形像素，绘制到(x, y)坐标。像素颜色由32位整数确定，从高位到低位是`00rrggbb`（不论大小端），红绿蓝各8位。
+Binary file ./am/.am.h.swo matches
+Binary file ./am/.am.h.swp matches
+./am/arch/native/src/gui.c:49:void _draw_rect(const uint32_t *pixels, int x, int y, int w, int h) {
+./am/arch/x86-nemu/src/ioe.c:27:void _draw_rect(const uint32_t *pixels, int x, int y, int w, int h) {
+./am/am.h:87:void _draw_rect(const uint32_t *pixels, int x, int y, int w, int h);
+Binary file ./am/build/am-native.a matches
+Binary file ./am/build/native/arch/native/src/gui.o matches
+Binary file ./am/build/am-x86-nemu.a matches
+Binary file ./am/build/x86-nemu/arch/x86-nemu/src/ioe.o matches
+./apps/litenes/src/fce.c:160:    _draw_rect(row + pad, pad, y, w - 2 * pad, 1);
+./apps/litenes/build/litenes-x86-nemu.txt:7537:  106821:	e8 ea 01 00 00       	call   106a10 <_draw_rect>
+./apps/litenes/build/litenes-x86-nemu.txt:7748:00106a10 <_draw_rect>:
+./apps/litenes/build/litenes-x86-nemu.txt:7758:  106a1f:	7e 3e                	jle    106a5f <_draw_rect+0x4f>
+./apps/litenes/build/litenes-x86-nemu.txt:7765:  106a31:	7e 23                	jle    106a56 <_draw_rect+0x46>
+./apps/litenes/build/litenes-x86-nemu.txt:7776:  106a54:	75 e2                	jne    106a38 <_draw_rect+0x28>
+./apps/litenes/build/litenes-x86-nemu.txt:7780:  106a5d:	75 cd                	jne    106a2c <_draw_rect+0x1c>
+Binary file ./apps/litenes/build/native/src/fce.o matches
+Binary file ./apps/litenes/build/litenes-x86-nemu matches
+Binary file ./apps/litenes/build/x86-nemu/src/fce.o matches
+Binary file ./apps/litenes/build/litenes-native matches
+Binary file ./apps/dhrystone/build/dhrystone-x86-nemu matches
+./apps/typing/draw.c:66:      _draw_rect(&canvas[y * H / h][x * W / w], x, y, 1, 1);
+./apps/typing/draw.c:73:  _draw_rect(&canvas[0][0], x, y, W, H);
+Binary file ./apps/typing/build/typing-x86-nemu matches
+./apps/typing/build/typing-x86-nemu.txt:967:  100ab6:	e8 29 09 00 00       	call   1013e4 <_draw_rect>
+./apps/typing/build/typing-x86-nemu.txt:1878:001013e4 <_draw_rect>:
+./apps/typing/build/typing-x86-nemu.txt:1887:  1013f2:	7e 3e                	jle    101432 <_draw_rect+0x4e>
+./apps/typing/build/typing-x86-nemu.txt:1908:  101430:	75 da                	jne    10140c <_draw_rect+0x28>
+Binary file ./apps/typing/build/x86-nemu/draw.o matches
+./tags:2078:_draw_rect	am/arch/native/src/gui.c	/^void _draw_rect(const uint32_t *pixels, int x, int y, int w, int h) {$/;"	f
+./tags:2079:_draw_rect	am/arch/x86-nemu/src/ioe.c	/^void _draw_rect(const uint32_t *pixels, int x, int y, int w, int h) {$/;"	f
+Binary file ./tests/keytest/build/keytest-x86-nemu matches
+Binary file ./tests/timetest/build/timetest-x86-nemu matches
+./tests/videotest/main.cpp:31:      _draw_rect(color_buf, x * w, y * h, w, h);
+Binary file ./tests/videotest/build/videotest-x86-nemu matches
+Binary file ./tests/videotest/build/x86-nemu/main.o matches
+./tests/videotest/build/videotest-x86-nemu.txt:128:  10012b:	e8 c4 08 00 00       	call   1009f4 <_draw_rect>
+./tests/videotest/build/videotest-x86-nemu.txt:989:001009f4 <_draw_rect>:
+./tests/videotest/build/videotest-x86-nemu.txt:1003:  100a10:	7d 61                	jge    100a73 <_draw_rect+0x7f>
+./tests/videotest/build/videotest-x86-nemu.txt:1020:  100a39:	7d 32                	jge    100a6d <_draw_rect+0x79>
+./tests/videotest/build/videotest-x86-nemu.txt:1035:  100a65:	75 e5                	jne    100a4c <_draw_rect+0x58>
+./tests/videotest/build/videotest-x86-nemu.txt:1040:  100a71:	75 c1                	jne    100a34 <_draw_rect+0x40>
